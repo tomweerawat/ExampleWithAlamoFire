@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0n-GN-ZcN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,13 +11,13 @@
         <!--Vacation Spots-->
         <scene sceneID="W0B-pF-Oa0">
             <objects>
-                <tableViewController id="s0n-GN-ZcN" sceneMemberID="viewController">
+                <tableViewController id="s0n-GN-ZcN" customClass="PhotoController" customModule="ExampleWithAlamo" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ael-ag-rGx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VacationSpotCell" id="C3r-F8-WKD" customClass="VacationSpotCell" customModule="ExampleWithAlamo" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VacationSpotCell" id="C3r-F8-WKD" customClass="PhotoCell" customModule="ExampleWithAlamo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C3r-F8-WKD" id="Pyf-T9-KH6">
@@ -61,23 +61,22 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="locationNameLabel" destination="AJp-RS-w2b" id="9Do-bh-3kV"/>
-                                    <outlet property="nameLabel" destination="jsx-6p-JJf" id="XsS-QR-8zb"/>
-                                    <outlet property="thumbnailImageView" destination="hqX-It-prv" id="aKs-eo-cfW"/>
+                                    <outlet property="locationNameLabel" destination="AJp-RS-w2b" id="RFQ-Ca-yku"/>
+                                    <outlet property="nameLabel" destination="jsx-6p-JJf" id="d9S-8L-sDi"/>
+                                    <outlet property="thumbnailImageView" destination="hqX-It-prv" id="qV7-8e-S8f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="s0n-GN-ZcN" id="2Zr-ku-dQY"/>
-                            <outlet property="delegate" destination="s0n-GN-ZcN" id="WDX-Al-gof"/>
+                            <outlet property="dataSource" destination="s0n-GN-ZcN" id="wgK-F8-kpi"/>
+                            <outlet property="delegate" destination="s0n-GN-ZcN" id="Tmf-wh-DRc"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Vacation Spots" id="fOC-Vd-Y6e">
                         <barButtonItem key="backBarButtonItem" title="Back" id="YaG-J2-u7s"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="Ael-ag-rGx" id="ZTy-la-ku9"/>
-                        <outlet property="tableViewLoad" destination="Ael-ag-rGx" id="Kdc-bx-Kfj"/>
+                        <outlet property="tableViewLoad" destination="Ael-ag-rGx" id="VhU-yD-iS2"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDO-Hi-IfO" userLabel="First Responder" sceneMemberID="firstResponder"/>

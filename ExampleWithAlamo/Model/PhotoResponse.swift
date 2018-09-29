@@ -41,7 +41,8 @@ class Data: Mappable {
     var aperture: String?
     
     required init?(map: Map){
-        
+       
+        link = ""
     }
     
     func mapping(map: Map) {
