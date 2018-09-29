@@ -17,9 +17,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        loadData()
     }
+    
+    
+    
+    
+    
+    
     func loadData(){
+      
         let URL = "https://nuuneoi.com/courses/500px/list"
         Alamofire.request(URL).responseObject{ (response: DataResponse<PhotoResponse>) in
+            SVProgressHUD.setDefaultMaskType(.black)
+            SVProgressHUD.show(withStatus: "Loading...")
             
             let weatherResponse = response.result.value
             print(weatherResponse?.data)
@@ -27,11 +36,13 @@ class ViewController: UIViewController {
             if let data = weatherResponse?.data {
                 for newdata in data {
                     print(newdata.iso)
+                   SVProgressHUD.dismiss()
                     
                 }
             }
         }
     }
+    
 
 
 }

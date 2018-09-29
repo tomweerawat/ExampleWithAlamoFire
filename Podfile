@@ -10,5 +10,6 @@ pod 'Alamofire', '~> 4.7'
 pod 'SwiftyJSON', '~> 4.0.0'
 pod 'AlamofireImage', '~> 3.1'
 pod 'AlamofireObjectMapper', '~> 5.0'
+pod 'ObjectMapper', '~> 3.2'
 
 end
