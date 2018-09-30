@@ -16,6 +16,7 @@
 		CB266870215F898D00FF9919 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB26686F215F898D00FF9919 /* PhotoResponse.swift */; };
 		CBF3EE59215FAF66000902BA /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3EE58215FAF66000902BA /* PhotoController.swift */; };
 		CBF3EE5C215FB5FE000902BA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3EE5B215FB5FE000902BA /* PhotoCell.swift */; };
+		CBF3EE62215FFDA6000902BA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3EE61215FFDA6000902BA /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CB26686F215F898D00FF9919 /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
 		CBF3EE58215FAF66000902BA /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		CBF3EE5B215FB5FE000902BA /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CBF3EE61215FFDA6000902BA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				CB26685C215F88C900FF9919 /* ViewController.swift */,
 				CBF3EE58215FAF66000902BA /* PhotoController.swift */,
+				CBF3EE61215FFDA6000902BA /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				CB266870215F898D00FF9919 /* PhotoResponse.swift in Sources */,
 				CBF3EE5C215FB5FE000902BA /* PhotoCell.swift in Sources */,
 				CB26685D215F88C900FF9919 /* ViewController.swift in Sources */,
+				CBF3EE62215FFDA6000902BA /* DetailViewController.swift in Sources */,
 				CBF3EE59215FAF66000902BA /* PhotoController.swift in Sources */,
 				CB26685B215F88C900FF9919 /* AppDelegate.swift in Sources */,
 			);
