@@ -47,6 +47,16 @@ class PhotoController: UITableViewController {
        SVProgressHUD.dismiss()
         return cell;
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedCell = sender as? UITableViewCell, let selectedRowIndex = tableView.indexPath(for: selectedCell)?.row, segue.identifier == "detailView" else {
+            fatalError("sender is not a UITableViewCell or was not found in the tableView, or segue.identifier is incorrect")
+        }
+
+        let vacationSpot = respPhoto?[selectedRowIndex]
+        let detailViewController = segue.destination as! DetailViewController
+        detailViewController.photoDetail = vacationSpot
+    }
   
     func loadData(){
         

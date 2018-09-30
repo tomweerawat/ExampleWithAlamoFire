@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,6 +65,7 @@
                                     <outlet property="locationNameLabel" destination="AJp-RS-w2b" id="RFQ-Ca-yku"/>
                                     <outlet property="nameLabel" destination="jsx-6p-JJf" id="d9S-8L-sDi"/>
                                     <outlet property="thumbnailImageView" destination="hqX-It-prv" id="qV7-8e-S8f"/>
+                                    <segue destination="UpE-6a-eX7" kind="show" id="uTU-iT-rzo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -81,7 +83,37 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDO-Hi-IfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960.8" y="45.42728635682159"/>
+            <point key="canvasLocation" x="-97" y="-419"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="lk3-VQ-C6h">
+            <objects>
+                <viewController storyboardIdentifier="detailView" id="UpE-6a-eX7" customClass="DetailViewController" customModule="ExampleWithAlamo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UYT-8i-haU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="detailimg" translatesAutoresizingMaskIntoConstraints="NO" id="401-ve-Qcu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="401-ve-Qcu" firstAttribute="top" secondItem="L4E-Jh-9XL" secondAttribute="top" id="Fs8-Y2-qbB"/>
+                            <constraint firstItem="L4E-Jh-9XL" firstAttribute="bottom" secondItem="401-ve-Qcu" secondAttribute="bottom" id="HHI-pF-fc1"/>
+                            <constraint firstItem="L4E-Jh-9XL" firstAttribute="trailing" secondItem="401-ve-Qcu" secondAttribute="trailing" id="Mso-6E-Ryf"/>
+                            <constraint firstItem="401-ve-Qcu" firstAttribute="leading" secondItem="L4E-Jh-9XL" secondAttribute="leading" id="dGo-5o-WVN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L4E-Jh-9XL"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailImage" destination="401-ve-Qcu" id="EZJ-X4-Ufa"/>
+                        <outlet property="imagedetail" destination="401-ve-Qcu" id="2WI-s8-d9L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRk-Zc-iXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="-418"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l2y-5d-KLO">
@@ -99,7 +131,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybK-Nx-Mbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="45"/>
+            <point key="canvasLocation" x="-937" y="-401"/>
         </scene>
     </scenes>
     <resources>
